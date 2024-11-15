@@ -31,7 +31,12 @@ def get_completion():
     except Exception as e:
         output_text.delete("1.0", tk.END)
         output_text.insert(tk.END, f"Error: {e}")
-        
+
+# Function to clear both input and output text boxes
+def clear_text():
+    input_text.delete("1.0", tk.END)
+    output_text.delete("1.0", tk.END)
+
 # Create the GUI application
 root = tk.Tk()
 root.title("OpenAI Chat Completion App")
@@ -46,6 +51,10 @@ input_text.pack()
 # Submit button
 submit_button = tk.Button(root, text="Submit", command=get_completion)
 submit_button.pack()
+
+# Clear button
+clear_button = tk.Button(root, text="Clear", command=clear_text)
+clear_button.pack()
 
 # Output text box
 output_label = tk.Label(root, text="Output:")
