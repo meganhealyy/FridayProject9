@@ -6,6 +6,7 @@ To use this program, clone the repository in your chosen code editor (e.g. Visua
 (2) README.md
 (3) .git.ignore
 (4) .env_example.py
+(5) prompts_responses.db
 
 The API key is secured in a .env file so other users can not see it. In order to run the code, you must get your own API key and make your own .env file. The title of the file is simply '.env'. To get an API code, go to the OpenAI website. Under the 'Products' dropdown, select 'API Login'. After logging in, select 'Dashboard' and go down to 'API Keys' on the left side of the screen. From there, you should be able to select 'Create A New Key'. After creating it, copy it. If you are unable to copy it, you must create a new key. Follow the template in the '.env_example.py' file when creating the '.env' file.
 
