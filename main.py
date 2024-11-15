@@ -31,3 +31,28 @@ def get_completion():
     except Exception as e:
         output_text.delete("1.0", tk.END)
         output_text.insert(tk.END, f"Error: {e}")
+        
+# Create the GUI application
+root = tk.Tk()
+root.title("OpenAI Chat Completion App")
+
+# Input text box
+input_label = tk.Label(root, text="Enter your prompt:")
+input_label.pack()
+
+input_text = tk.Text(root, height=10, width=50)
+input_text.pack()
+
+# Submit button
+submit_button = tk.Button(root, text="Submit", command=get_completion)
+submit_button.pack()
+
+# Output text box
+output_label = tk.Label(root, text="Output:")
+output_label.pack()
+
+output_text = tk.Text(root, height=10, width=50)
+output_text.pack()
+
+# Run the GUI application
+root.mainloop()
