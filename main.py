@@ -88,7 +88,7 @@ root.title("OpenAI Chat Completion App")
 input_label = tk.Label(root, text="Enter your prompt:")
 input_label.pack()
 
-input_text = tk.Text(root, height=40, width=200)
+input_text = tk.Text(root, height=20, width=200)
 input_text.pack()
 
 # Submit button
@@ -107,7 +107,7 @@ history_button.pack()
 output_label = tk.Label(root, text="Output:")
 output_label.pack()
 
-output_text = tk.Text(root, height=40, width=200)
+output_text = tk.Text(root, height=20, width=200)
 output_text.pack()
 
 # Run the GUI application
